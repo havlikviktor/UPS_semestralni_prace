@@ -27,7 +27,7 @@ class Server_manager {
 public:
     Server_manager(int port,in_addr_t address);
 
-    [[noreturn]] void start_server(int max_clients);
+    void start_server(int max_clients);
 
     void add_lobby(const string& lobby_name);
 

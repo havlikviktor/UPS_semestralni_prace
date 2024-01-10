@@ -140,8 +140,9 @@ void Lobby_manager::client_leaves(const shared_ptr<Client_data> &client) {
     if(client == nullptr || client->get_lobby() == nullptr || client->game != nullptr)
         return;
 
+    shared_ptr<Lobby> lobby = client->get_lobby();
     client->leave_lobby();
-    notify_others(client->get_lobby(),client->get_client_name());
+    notify_others(lobby,client->get_client_name());
 }
 
 

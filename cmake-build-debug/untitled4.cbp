@@ -17,8 +17,8 @@
 					<DistClean command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/Viktor/CLionProjects/untitled4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="untitled4">
-				<Option output="/mnt/c/Users/Viktor/CLionProjects/untitled4/cmake-build-debug/untitled4" prefix_auto="0" extension_auto="0"/>
+			<Target title="server_ups">
+				<Option output="/mnt/c/Users/Viktor/CLionProjects/untitled4/cmake-build-debug/server_ups" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/mnt/c/Users/Viktor/CLionProjects/untitled4/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -33,14 +33,14 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/Viktor/CLionProjects/untitled4/cmake-build-debug/Makefile&quot;  VERBOSE=1 untitled4"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/Viktor/CLionProjects/untitled4/cmake-build-debug/Makefile&quot;  VERBOSE=1 server_ups"/>
 					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/Viktor/CLionProjects/untitled4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/Viktor/CLionProjects/untitled4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/Viktor/CLionProjects/untitled4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="untitled4/fast">
-				<Option output="/mnt/c/Users/Viktor/CLionProjects/untitled4/cmake-build-debug/untitled4" prefix_auto="0" extension_auto="0"/>
+			<Target title="server_ups/fast">
+				<Option output="/mnt/c/Users/Viktor/CLionProjects/untitled4/cmake-build-debug/server_ups" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/mnt/c/Users/Viktor/CLionProjects/untitled4/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -55,7 +55,7 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/Viktor/CLionProjects/untitled4/cmake-build-debug/Makefile&quot;  VERBOSE=1 untitled4/fast"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/Viktor/CLionProjects/untitled4/cmake-build-debug/Makefile&quot;  VERBOSE=1 server_ups/fast"/>
 					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/Viktor/CLionProjects/untitled4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/Viktor/CLionProjects/untitled4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/Viktor/CLionProjects/untitled4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -83,58 +83,58 @@
 			</Target>
 		</Build>
 		<Unit filename="/mnt/c/Users/Viktor/CLionProjects/untitled4/Client_data/Client_data.cpp">
-			<Option target="untitled4"/>
+			<Option target="server_ups"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/Viktor/CLionProjects/untitled4/Client_data/Client_data.h">
-			<Option target="untitled4"/>
+			<Option target="server_ups"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/Viktor/CLionProjects/untitled4/Constants.h">
-			<Option target="untitled4"/>
+			<Option target="server_ups"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/Viktor/CLionProjects/untitled4/Game/Game.cpp">
-			<Option target="untitled4"/>
+			<Option target="server_ups"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/Viktor/CLionProjects/untitled4/Game/Game.h">
-			<Option target="untitled4"/>
+			<Option target="server_ups"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/Viktor/CLionProjects/untitled4/Lobby/Lobby.cpp">
-			<Option target="untitled4"/>
+			<Option target="server_ups"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/Viktor/CLionProjects/untitled4/Lobby/Lobby.h">
-			<Option target="untitled4"/>
+			<Option target="server_ups"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Client_manager/Client_manager.cpp">
-			<Option target="untitled4"/>
+			<Option target="server_ups"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Client_manager/Client_manager.h">
-			<Option target="untitled4"/>
+			<Option target="server_ups"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Connection_manager/Connection_manager.cpp">
-			<Option target="untitled4"/>
+			<Option target="server_ups"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Connection_manager/Connection_manager.h">
-			<Option target="untitled4"/>
+			<Option target="server_ups"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Game_manager/Game_manager.cpp">
-			<Option target="untitled4"/>
+			<Option target="server_ups"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Game_manager/Game_manager.h">
-			<Option target="untitled4"/>
+			<Option target="server_ups"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Lobby_manager/Lobby_manager.cpp">
-			<Option target="untitled4"/>
+			<Option target="server_ups"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Lobby_manager/Lobby_manager.h">
-			<Option target="untitled4"/>
+			<Option target="server_ups"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Server_manager/Server_manager.cpp">
-			<Option target="untitled4"/>
+			<Option target="server_ups"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Server_manager/Server_manager.h">
-			<Option target="untitled4"/>
+			<Option target="server_ups"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/Viktor/CLionProjects/untitled4/main.cpp">
-			<Option target="untitled4"/>
+			<Option target="server_ups"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/Viktor/CLionProjects/untitled4/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

@@ -30,7 +30,7 @@ void Server_manager::create_managers() {
 }
 
 
-[[noreturn]] void Server_manager::start_server(int max_clients) {
+    void Server_manager::start_server(int max_clients) {
         int client_socket, fd;
         int return_value;
         int a2read;
@@ -45,6 +45,7 @@ void Server_manager::create_managers() {
             printf("Listen - OK\n");
         } else {
             printf("Listen - ERR\n");
+            return;
         }
 
         // vyprazdnime sadu deskriptoru a vlozime server socket
@@ -110,7 +111,7 @@ void Server_manager::handle_request(int client_socket,  fd_set* clients_sockets)
 
     int result = request_handler(msg, client_socket);
 
-    if(result == NOT_REGISTED_CLIENT)
+    if(result == NOT_REGISTERED_CLIENT || result == NO_VALID_REQUEST)
         kill_socket(client_socket, clients_sockets);
 }
 
@@ -135,13 +136,13 @@ int Server_manager::request_handler(list<string> request, int client_socket) {
     if(client == nullptr) {
         cout << "WARNING not registered client" << endl;
         if(result == NO_VALID_REQUEST)
-            return NOT_REGISTED_CLIENT;
+            return NOT_REGISTERED_CLIENT;
         else
             return result;
     }
     else if(client->get_status() == RECONNECTING_STATUS) {
         cout << "WARNING client sending requests before reconnecting";
-        return NOT_REGISTED_CLIENT;
+        return NOT_REGISTERED_CLIENT;
     }
 
     else if (action == "LOBBY") {
@@ -232,8 +233,8 @@ void Server_manager::kill_socket(int socket, fd_set* clients_sockets) {
 
         cout << "assigned client " << c->get_client_name() << " disconnected" << endl;
     }
-
-    cout << "no client assigned" << endl;
+    else
+        cout << "no client assigned" << endl;
 }
 
 

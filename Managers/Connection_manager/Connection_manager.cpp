@@ -29,7 +29,8 @@ void Connection_manager::send_message(const std::string& responce,int client_soc
         msg.append(MSG_SEPARATOR + word);
 
     msg.push_back('\n');
-    cout << "sanding: " << msg;
+    if(!(msg == "PING\n"))
+        cout << "sending: " << msg;
     send(client_socket, msg.c_str(), msg.size(), 0);
 }
 

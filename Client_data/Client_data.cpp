@@ -73,7 +73,7 @@ int Client_data::get_status() const {
 
 void Client_data::leave_game() {
     if(game == nullptr) {
-        cout << "no game to lasdasd" << endl;
+        cout << "no game to leave" << endl;
         return;
     }
 
@@ -84,7 +84,6 @@ void Client_data::leave_game() {
 
 void Client_data::set_alive_state(bool state) {
     if(state != alive) {
-        cout << "changing alive status to: " << state << endl;
         alive = state;
     }
 }

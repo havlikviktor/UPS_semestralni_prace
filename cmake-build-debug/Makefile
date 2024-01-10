@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named untitled4
+# Target rules for targets named server_ups
 
 # Build rule for target.
-untitled4: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 untitled4
-.PHONY : untitled4
+server_ups: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server_ups
+.PHONY : server_ups
 
 # fast build rule for target.
-untitled4/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled4.dir/build.make CMakeFiles/untitled4.dir/build
-.PHONY : untitled4/fast
+server_ups/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_ups.dir/build.make CMakeFiles/server_ups.dir/build
+.PHONY : server_ups/fast
 
 Client_data/Client_data.o: Client_data/Client_data.cpp.o
 .PHONY : Client_data/Client_data.o
 
 # target to build an object file
 Client_data/Client_data.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled4.dir/build.make CMakeFiles/untitled4.dir/Client_data/Client_data.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_ups.dir/build.make CMakeFiles/server_ups.dir/Client_data/Client_data.cpp.o
 .PHONY : Client_data/Client_data.cpp.o
 
 Client_data/Client_data.i: Client_data/Client_data.cpp.i
@@ -142,7 +142,7 @@ Client_data/Client_data.i: Client_data/Client_data.cpp.i
 
 # target to preprocess a source file
 Client_data/Client_data.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled4.dir/build.make CMakeFiles/untitled4.dir/Client_data/Client_data.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_ups.dir/build.make CMakeFiles/server_ups.dir/Client_data/Client_data.cpp.i
 .PHONY : Client_data/Client_data.cpp.i
 
 Client_data/Client_data.s: Client_data/Client_data.cpp.s
@@ -150,7 +150,7 @@ Client_data/Client_data.s: Client_data/Client_data.cpp.s
 
 # target to generate assembly for a file
 Client_data/Client_data.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled4.dir/build.make CMakeFiles/untitled4.dir/Client_data/Client_data.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_ups.dir/build.make CMakeFiles/server_ups.dir/Client_data/Client_data.cpp.s
 .PHONY : Client_data/Client_data.cpp.s
 
 Game/Game.o: Game/Game.cpp.o
@@ -158,7 +158,7 @@ Game/Game.o: Game/Game.cpp.o
 
 # target to build an object file
 Game/Game.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled4.dir/build.make CMakeFiles/untitled4.dir/Game/Game.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_ups.dir/build.make CMakeFiles/server_ups.dir/Game/Game.cpp.o
 .PHONY : Game/Game.cpp.o
 
 Game/Game.i: Game/Game.cpp.i
@@ -166,7 +166,7 @@ Game/Game.i: Game/Game.cpp.i
 
 # target to preprocess a source file
 Game/Game.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled4.dir/build.make CMakeFiles/untitled4.dir/Game/Game.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_ups.dir/build.make CMakeFiles/server_ups.dir/Game/Game.cpp.i
 .PHONY : Game/Game.cpp.i
 
 Game/Game.s: Game/Game.cpp.s
@@ -174,7 +174,7 @@ Game/Game.s: Game/Game.cpp.s
 
 # target to generate assembly for a file
 Game/Game.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled4.dir/build.make CMakeFiles/untitled4.dir/Game/Game.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_ups.dir/build.make CMakeFiles/server_ups.dir/Game/Game.cpp.s
 .PHONY : Game/Game.cpp.s
 
 Lobby/Lobby.o: Lobby/Lobby.cpp.o
@@ -182,7 +182,7 @@ Lobby/Lobby.o: Lobby/Lobby.cpp.o
 
 # target to build an object file
 Lobby/Lobby.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled4.dir/build.make CMakeFiles/untitled4.dir/Lobby/Lobby.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_ups.dir/build.make CMakeFiles/server_ups.dir/Lobby/Lobby.cpp.o
 .PHONY : Lobby/Lobby.cpp.o
 
 Lobby/Lobby.i: Lobby/Lobby.cpp.i
@@ -190,7 +190,7 @@ Lobby/Lobby.i: Lobby/Lobby.cpp.i
 
 # target to preprocess a source file
 Lobby/Lobby.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled4.dir/build.make CMakeFiles/untitled4.dir/Lobby/Lobby.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_ups.dir/build.make CMakeFiles/server_ups.dir/Lobby/Lobby.cpp.i
 .PHONY : Lobby/Lobby.cpp.i
 
 Lobby/Lobby.s: Lobby/Lobby.cpp.s
@@ -198,7 +198,7 @@ Lobby/Lobby.s: Lobby/Lobby.cpp.s
 
 # target to generate assembly for a file
 Lobby/Lobby.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled4.dir/build.make CMakeFiles/untitled4.dir/Lobby/Lobby.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_ups.dir/build.make CMakeFiles/server_ups.dir/Lobby/Lobby.cpp.s
 .PHONY : Lobby/Lobby.cpp.s
 
 Managers/Client_manager/Client_manager.o: Managers/Client_manager/Client_manager.cpp.o
@@ -206,7 +206,7 @@ Managers/Client_manager/Client_manager.o: Managers/Client_manager/Client_manager
 
 # target to build an object file
 Managers/Client_manager/Client_manager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled4.dir/build.make CMakeFiles/untitled4.dir/Managers/Client_manager/Client_manager.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_ups.dir/build.make CMakeFiles/server_ups.dir/Managers/Client_manager/Client_manager.cpp.o
 .PHONY : Managers/Client_manager/Client_manager.cpp.o
 
 Managers/Client_manager/Client_manager.i: Managers/Client_manager/Client_manager.cpp.i
@@ -214,7 +214,7 @@ Managers/Client_manager/Client_manager.i: Managers/Client_manager/Client_manager
 
 # target to preprocess a source file
 Managers/Client_manager/Client_manager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled4.dir/build.make CMakeFiles/untitled4.dir/Managers/Client_manager/Client_manager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_ups.dir/build.make CMakeFiles/server_ups.dir/Managers/Client_manager/Client_manager.cpp.i
 .PHONY : Managers/Client_manager/Client_manager.cpp.i
 
 Managers/Client_manager/Client_manager.s: Managers/Client_manager/Client_manager.cpp.s
@@ -222,7 +222,7 @@ Managers/Client_manager/Client_manager.s: Managers/Client_manager/Client_manager
 
 # target to generate assembly for a file
 Managers/Client_manager/Client_manager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled4.dir/build.make CMakeFiles/untitled4.dir/Managers/Client_manager/Client_manager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_ups.dir/build.make CMakeFiles/server_ups.dir/Managers/Client_manager/Client_manager.cpp.s
 .PHONY : Managers/Client_manager/Client_manager.cpp.s
 
 Managers/Connection_manager/Connection_manager.o: Managers/Connection_manager/Connection_manager.cpp.o
@@ -230,7 +230,7 @@ Managers/Connection_manager/Connection_manager.o: Managers/Connection_manager/Co
 
 # target to build an object file
 Managers/Connection_manager/Connection_manager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled4.dir/build.make CMakeFiles/untitled4.dir/Managers/Connection_manager/Connection_manager.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_ups.dir/build.make CMakeFiles/server_ups.dir/Managers/Connection_manager/Connection_manager.cpp.o
 .PHONY : Managers/Connection_manager/Connection_manager.cpp.o
 
 Managers/Connection_manager/Connection_manager.i: Managers/Connection_manager/Connection_manager.cpp.i
@@ -238,7 +238,7 @@ Managers/Connection_manager/Connection_manager.i: Managers/Connection_manager/Co
 
 # target to preprocess a source file
 Managers/Connection_manager/Connection_manager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled4.dir/build.make CMakeFiles/untitled4.dir/Managers/Connection_manager/Connection_manager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_ups.dir/build.make CMakeFiles/server_ups.dir/Managers/Connection_manager/Connection_manager.cpp.i
 .PHONY : Managers/Connection_manager/Connection_manager.cpp.i
 
 Managers/Connection_manager/Connection_manager.s: Managers/Connection_manager/Connection_manager.cpp.s
@@ -246,7 +246,7 @@ Managers/Connection_manager/Connection_manager.s: Managers/Connection_manager/Co
 
 # target to generate assembly for a file
 Managers/Connection_manager/Connection_manager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled4.dir/build.make CMakeFiles/untitled4.dir/Managers/Connection_manager/Connection_manager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_ups.dir/build.make CMakeFiles/server_ups.dir/Managers/Connection_manager/Connection_manager.cpp.s
 .PHONY : Managers/Connection_manager/Connection_manager.cpp.s
 
 Managers/Game_manager/Game_manager.o: Managers/Game_manager/Game_manager.cpp.o
@@ -254,7 +254,7 @@ Managers/Game_manager/Game_manager.o: Managers/Game_manager/Game_manager.cpp.o
 
 # target to build an object file
 Managers/Game_manager/Game_manager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled4.dir/build.make CMakeFiles/untitled4.dir/Managers/Game_manager/Game_manager.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_ups.dir/build.make CMakeFiles/server_ups.dir/Managers/Game_manager/Game_manager.cpp.o
 .PHONY : Managers/Game_manager/Game_manager.cpp.o
 
 Managers/Game_manager/Game_manager.i: Managers/Game_manager/Game_manager.cpp.i
@@ -262,7 +262,7 @@ Managers/Game_manager/Game_manager.i: Managers/Game_manager/Game_manager.cpp.i
 
 # target to preprocess a source file
 Managers/Game_manager/Game_manager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled4.dir/build.make CMakeFiles/untitled4.dir/Managers/Game_manager/Game_manager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_ups.dir/build.make CMakeFiles/server_ups.dir/Managers/Game_manager/Game_manager.cpp.i
 .PHONY : Managers/Game_manager/Game_manager.cpp.i
 
 Managers/Game_manager/Game_manager.s: Managers/Game_manager/Game_manager.cpp.s
@@ -270,7 +270,7 @@ Managers/Game_manager/Game_manager.s: Managers/Game_manager/Game_manager.cpp.s
 
 # target to generate assembly for a file
 Managers/Game_manager/Game_manager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled4.dir/build.make CMakeFiles/untitled4.dir/Managers/Game_manager/Game_manager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_ups.dir/build.make CMakeFiles/server_ups.dir/Managers/Game_manager/Game_manager.cpp.s
 .PHONY : Managers/Game_manager/Game_manager.cpp.s
 
 Managers/Lobby_manager/Lobby_manager.o: Managers/Lobby_manager/Lobby_manager.cpp.o
@@ -278,7 +278,7 @@ Managers/Lobby_manager/Lobby_manager.o: Managers/Lobby_manager/Lobby_manager.cpp
 
 # target to build an object file
 Managers/Lobby_manager/Lobby_manager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled4.dir/build.make CMakeFiles/untitled4.dir/Managers/Lobby_manager/Lobby_manager.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_ups.dir/build.make CMakeFiles/server_ups.dir/Managers/Lobby_manager/Lobby_manager.cpp.o
 .PHONY : Managers/Lobby_manager/Lobby_manager.cpp.o
 
 Managers/Lobby_manager/Lobby_manager.i: Managers/Lobby_manager/Lobby_manager.cpp.i
@@ -286,7 +286,7 @@ Managers/Lobby_manager/Lobby_manager.i: Managers/Lobby_manager/Lobby_manager.cpp
 
 # target to preprocess a source file
 Managers/Lobby_manager/Lobby_manager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled4.dir/build.make CMakeFiles/untitled4.dir/Managers/Lobby_manager/Lobby_manager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_ups.dir/build.make CMakeFiles/server_ups.dir/Managers/Lobby_manager/Lobby_manager.cpp.i
 .PHONY : Managers/Lobby_manager/Lobby_manager.cpp.i
 
 Managers/Lobby_manager/Lobby_manager.s: Managers/Lobby_manager/Lobby_manager.cpp.s
@@ -294,7 +294,7 @@ Managers/Lobby_manager/Lobby_manager.s: Managers/Lobby_manager/Lobby_manager.cpp
 
 # target to generate assembly for a file
 Managers/Lobby_manager/Lobby_manager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled4.dir/build.make CMakeFiles/untitled4.dir/Managers/Lobby_manager/Lobby_manager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_ups.dir/build.make CMakeFiles/server_ups.dir/Managers/Lobby_manager/Lobby_manager.cpp.s
 .PHONY : Managers/Lobby_manager/Lobby_manager.cpp.s
 
 Managers/Server_manager/Server_manager.o: Managers/Server_manager/Server_manager.cpp.o
@@ -302,7 +302,7 @@ Managers/Server_manager/Server_manager.o: Managers/Server_manager/Server_manager
 
 # target to build an object file
 Managers/Server_manager/Server_manager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled4.dir/build.make CMakeFiles/untitled4.dir/Managers/Server_manager/Server_manager.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_ups.dir/build.make CMakeFiles/server_ups.dir/Managers/Server_manager/Server_manager.cpp.o
 .PHONY : Managers/Server_manager/Server_manager.cpp.o
 
 Managers/Server_manager/Server_manager.i: Managers/Server_manager/Server_manager.cpp.i
@@ -310,7 +310,7 @@ Managers/Server_manager/Server_manager.i: Managers/Server_manager/Server_manager
 
 # target to preprocess a source file
 Managers/Server_manager/Server_manager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled4.dir/build.make CMakeFiles/untitled4.dir/Managers/Server_manager/Server_manager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_ups.dir/build.make CMakeFiles/server_ups.dir/Managers/Server_manager/Server_manager.cpp.i
 .PHONY : Managers/Server_manager/Server_manager.cpp.i
 
 Managers/Server_manager/Server_manager.s: Managers/Server_manager/Server_manager.cpp.s
@@ -318,7 +318,7 @@ Managers/Server_manager/Server_manager.s: Managers/Server_manager/Server_manager
 
 # target to generate assembly for a file
 Managers/Server_manager/Server_manager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled4.dir/build.make CMakeFiles/untitled4.dir/Managers/Server_manager/Server_manager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_ups.dir/build.make CMakeFiles/server_ups.dir/Managers/Server_manager/Server_manager.cpp.s
 .PHONY : Managers/Server_manager/Server_manager.cpp.s
 
 main.o: main.cpp.o
@@ -326,7 +326,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled4.dir/build.make CMakeFiles/untitled4.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_ups.dir/build.make CMakeFiles/server_ups.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -334,7 +334,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled4.dir/build.make CMakeFiles/untitled4.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_ups.dir/build.make CMakeFiles/server_ups.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -342,7 +342,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled4.dir/build.make CMakeFiles/untitled4.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_ups.dir/build.make CMakeFiles/server_ups.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -353,7 +353,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... untitled4"
+	@echo "... server_ups"
 	@echo "... Client_data/Client_data.o"
 	@echo "... Client_data/Client_data.i"
 	@echo "... Client_data/Client_data.s"

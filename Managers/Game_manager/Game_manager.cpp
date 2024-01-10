@@ -94,7 +94,7 @@ int Game_manager::make_move(const shared_ptr<Client_data>& client) {
     shared_ptr<Game> game = client->game;
     if(game == nullptr) {
         cm.send_message("ERR -1", client->get_socket());
-        return -1;
+        return 0;
     }
 
     int result = game->player_makes_move(client);
@@ -115,7 +115,6 @@ int Game_manager::make_move(const shared_ptr<Client_data>& client) {
 void Game_manager::evaluate(const shared_ptr<Client_data>& client) {
     shared_ptr<Game> game = client->game;
     if(game == nullptr || !game->is_round_over()) {
-        cout << (game == nullptr) << " or " <<  (!game->is_round_over());
         return;
     }
 
@@ -134,8 +133,10 @@ void Game_manager::evaluate(const shared_ptr<Client_data>& client) {
     cm.send_message(info, client->get_socket());
     notify_others(client,info.back(),winner);
 
-    if(game->is_game_over())
+    if(game->is_game_over()) {
+        cout << "DELETING GAME FOR ALL PLAYERS" << endl;
         delete_game(client);
+    }
 }
 
 int Game_manager::get_game_info(const shared_ptr<Client_data>& client) {

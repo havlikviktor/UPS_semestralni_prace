@@ -33,20 +33,17 @@ shared_ptr<Client_data> Client_manager::find_client_by_name(const string& name) 
 }
 
 int Client_manager::login_client(const string& login, int client_socket) {
-
     shared_ptr<Client_data> client = find_client_by_name(login);
-
     if(client) {
         return try_reconnect(client, client_socket);
     }
-
     else {
         if(login.size() <= NAME_MAX_LENGTH && login.size() >= NAME_MIN_LENGTH && login != NO_VALID_NAME) {
             client = make_shared<Client_data>(client_socket, login);
             client->set_status(LOGIN_STATUS);
             clients.push_back(client);
 
-            cm.send_message("OK 0", client_socket);     //successfully added
+            cm.send_message("OK 0 " + to_string(PING_INTERVAL) + " " + to_string(MAX_MISSED_PINGS), client_socket);     //successfully added
             return 0;
         }
         else {
@@ -69,12 +66,15 @@ int Client_manager::try_reconnect(const shared_ptr<Client_data>& client, int cli
 
     if(client->game == nullptr) {
         client->set_status(LOGIN_STATUS);
-        cm.send_message("OK " + std::to_string(LOGIN_STATUS), client_socket);
+        cm.send_message("OK " + std::to_string(LOGIN_STATUS) + " "
+                        + to_string(PING_INTERVAL) + " " + to_string(MAX_MISSED_PINGS) , client_socket);
         return LOGIN_STATUS;
     }
     else {
         client->set_status(IN_LOBBY_STATUS);
-        cm.send_message("OK " + std::to_string(IN_LOBBY_STATUS), client_socket);
+        cm.send_message("OK " + std::to_string(IN_LOBBY_STATUS) + " "
+                        + to_string(PING_INTERVAL) + " " + to_string(MAX_MISSED_PINGS) , client_socket);
+
         return IN_LOBBY_STATUS;
     }
 }
@@ -112,10 +112,14 @@ void Client_manager::ping_all() {
 
 void Client_manager::reset_pings() {
     for(shared_ptr<Client_data>& client : clients) {
-        if(client->is_alive())
-            client->set_alive_state(false);
-        else
-            client->add_missed_ping();
+        if(client->get_status() != INVALID_STATUS && client->get_status() != RECONNECTING_STATUS) {
+            if(client->is_alive())
+                client->set_alive_state(false);
+            else {
+                client->add_missed_ping();
+                cout << client->get_client_name() << " missed ping" << endl;
+            }
+        }
     }
 }
 

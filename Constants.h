@@ -7,11 +7,11 @@
 #define MAX_CLIENTS 10
 
 #define NO_VALID_REQUEST INT_MIN
-#define NOT_REGISTED_CLIENT INT_MAX
+#define NOT_REGISTERED_CLIENT INT_MAX
 #define MSG_SEPARATOR '|'
 
 #define PING_RESPONCE 69
-#define PING_INTERVAL 1000             //[s]
+#define PING_INTERVAL 1             //[s]
 #define MAX_MISSED_PINGS 3
 #define TIME_TO_RECONNECT 5          //[s]
 
@@ -27,6 +27,8 @@
 
 ////////////// Lobby /////////////////////////
 #define MAX_IN_LOBBY 4
+#define LOBBY_NAME_MAX_LENGTH 20
+#define LOBBY_NAME_MIN_LENGTH 2
 
 ///////////// Game //////////////////////////
 

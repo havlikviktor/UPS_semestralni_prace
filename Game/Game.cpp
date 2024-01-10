@@ -130,8 +130,10 @@ void Game::collect_cards(const string& winner_name) {
 
     auto winner = game_players.find(winner_name);
     for (auto & game_player : game_players) {
-        winner->second.cards.push_back(game_player.second.on_table);
-        cout << winner->first << " collecting: " << game_player.second.on_table << endl;
+        if(game_player.second.on_table > 0) {
+            winner->second.cards.push_back(game_player.second.on_table);
+            cout << winner->first << " collecting: " << game_player.second.on_table << endl;
+        }
     }
 }
 

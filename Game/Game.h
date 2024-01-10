@@ -14,12 +14,9 @@ using namespace std;
 
 class Client_data;
 
-
 class Game {
 
 public:
-    class Player;
-
     Game(const string& lobby_name, const vector<shared_ptr<Client_data>>& players);
 
     int player_makes_move(const shared_ptr<Client_data>& player);
@@ -41,6 +38,17 @@ public:
     void collect_cards(const string& winner_name);
 
 private:
+
+    class Player {
+    public:
+        vector<int> cards;
+        int on_table;
+        bool flip_in_this_round;
+
+        explicit Player(vector<int> cards): on_table(NOT_FLIPPED_CARD), cards(std::move(cards)), flip_in_this_round(false) {};
+        Player() : on_table(NO_VALID_CARD), cards({}), flip_in_this_round(false) {};
+    };
+
     unordered_map<std::string, Player> game_players;
     int active_players;
 
@@ -48,17 +56,6 @@ private:
     void add_player(const shared_ptr<Client_data>& player);
     static vector<int> generate_cards();
 
-};
-
-class Game::Player {
-public:
-    vector<int> cards;
-    int on_table;
-    bool flip_in_this_round;
-
-    // Constructor for convenience
-    explicit Player(vector<int> cards): on_table(NOT_FLIPPED_CARD), cards(std::move(cards)), flip_in_this_round(false) {};
-    Player() : on_table(NO_VALID_CARD), cards({}), flip_in_this_round(false) {};
 };
 
 
