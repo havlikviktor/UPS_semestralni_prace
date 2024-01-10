@@ -50,13 +50,7 @@ vector<string> Game::get_game_state(const shared_ptr<Client_data>& player) {
     state.push_back(questioning);
     return state;
 }
-/*
- * makes move for given player. returns number of flipped card or:
- *  -1 if player has no more cards to play.
- *  -2 if player already flipped his card in this round
- *  -3 if player is in rejoining state
- *  -4 if there is not such player with this name
- */
+
 int Game::player_makes_move(const shared_ptr<Client_data>& player) {
     for (auto & game_player : game_players) {
 

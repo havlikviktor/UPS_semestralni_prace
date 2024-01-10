@@ -33,12 +33,6 @@ vector<string> Lobby::get_player_names() const {
 }
 
 
-/*
- * adds player into this lobby. Returns 1 if added successfully  or:
- * -1 if lobby is full
- * -2 if player is already in some lobby
- * -3 client is already in this lobby
- */
 int Lobby::add_player(const shared_ptr<Client_data>& player) {
     if(in.size() >= MAX_IN_LOBBY) {
         return -1;
@@ -104,13 +98,4 @@ shared_ptr<Game> Lobby::start_game() {
     }
 
     return game;
-}
-
-vector<int> Lobby::get_to_notify(const string& skip) const {
-    vector<int> to_notify;
-    for(const shared_ptr<Client_data>& client : in) {
-        if(client->get_client_name() != skip)
-            to_notify.push_back(client->get_socket());
-    }
-    return to_notify;
 }

@@ -29,21 +29,20 @@ int Lobby_manager::join_lobby(const shared_ptr<Client_data>& client,const string
     for (const shared_ptr<Lobby>& lobby : lobbies) {
         if (lobby->get_name() == lobby_name) {
             result = lobby->add_player(client);
-            client->set_lobby(lobby);
-            client->set_status(IN_LOBBY_STATUS);
+
+            if(result == 1) {
+                cm.send_message("OK 1", client->get_socket());
+                notify_others(client->get_lobby(), client->get_client_name());
+                client->set_lobby(lobby);
+                client->set_status(IN_LOBBY_STATUS);
+
+                return result;
+            }
         }
     }
 
-    if(result == 1) {
-        cm.send_message("OK 1", client->get_socket());
-        notify_others(client->get_lobby(), client->get_client_name());
-        return result;
-    }
-
-    else {
-        cm.send_message("ERR " + to_string(result), client->get_socket());
-        return result;
-    }
+    cm.send_message("ERR " + to_string(result), client->get_socket());
+    return result;
 }
 
 void Lobby_manager::notify_others(const shared_ptr<Lobby>& lobby, const string& client_name) {

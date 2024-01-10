@@ -9,7 +9,7 @@ void Game_manager::rejoin_client_to_game(const shared_ptr<Client_data>& client) 
     shared_ptr<Game> client_game = client->game;
 
     if(client_game == nullptr) {
-        cout << "client " << client->get_client_name() << " has no game to leave" << endl;
+        cout << "client " << client->get_client_name() << " has no game to join" << endl;
         return;
     }
 
@@ -93,8 +93,8 @@ void Game_manager::notify_others(const shared_ptr<Client_data> &client, const st
 int Game_manager::make_move(const shared_ptr<Client_data>& client) {
     shared_ptr<Game> game = client->game;
     if(game == nullptr) {
-        cm.send_message("ERR -1", client->get_socket());
-        return 0;
+        cm.send_message("ERR -5", client->get_socket());
+        return -5;
     }
 
     int result = game->player_makes_move(client);
