@@ -13,7 +13,7 @@
 #define PING_RESPONCE 69
 #define PING_INTERVAL 1             //[s]
 #define MAX_MISSED_PINGS 3
-#define TIME_TO_RECONNECT 5          //[s]
+#define TIME_TO_RECONNECT 60          //[s]
 
 ///////////////// Client //////////////////////
 #define NAME_MAX_LENGTH 20

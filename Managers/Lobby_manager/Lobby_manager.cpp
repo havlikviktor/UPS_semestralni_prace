@@ -32,9 +32,9 @@ int Lobby_manager::join_lobby(const shared_ptr<Client_data>& client,const string
 
             if(result == 1) {
                 cm.send_message("OK 1", client->get_socket());
-                notify_others(client->get_lobby(), client->get_client_name());
                 client->set_lobby(lobby);
                 client->set_status(IN_LOBBY_STATUS);
+                notify_others(client->get_lobby(), client->get_client_name());
 
                 return result;
             }
@@ -67,6 +67,7 @@ int Lobby_manager::leave_lobby(const shared_ptr<Client_data>& client) {
 
     if(result == 1) {
         cm.send_message("OK " + to_string(result), client->get_socket());
+        client->set_status(LOGIN_STATUS);
         notify_others(lobby, client->get_client_name());
     }
 

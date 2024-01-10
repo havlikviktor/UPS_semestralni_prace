@@ -86,13 +86,15 @@ void Server_manager::create_managers() {
                             }
                                 // na socketu se stalo neco spatneho
                             else {
-                                close(fd);
-                                FD_CLR(fd, &client_socks);
                                 shared_ptr<Client_data> c = cm.find_client_by_socket(fd);
                                 if(c) {
-                                    gm.client_leaves(c);
-                                    lm.client_leaves(c);
-                                    cm.client_leaves(c);
+                                    vector<shared_ptr<Client_data>> v;
+                                    v.push_back(c);
+                                    kick_inactive(v);
+                                }
+                                else {
+                                    close(fd);
+                                    FD_CLR(fd, &client_socks);
                                 }
                             }
                         }
@@ -134,9 +136,10 @@ int Server_manager::request_handler(list<string> request, int client_socket) {
     client = cm.find_client_by_socket(client_socket);
 
     if(client == nullptr) {
-        cout << "WARNING not registered client" << endl;
-        if(result == NO_VALID_REQUEST)
+        if(result == NO_VALID_REQUEST) {
+            cout << "WARNING not registered client" << endl;
             return NOT_REGISTERED_CLIENT;
+        }
         else
             return result;
     }
@@ -212,6 +215,7 @@ void Server_manager::kick_inactive(const std::vector<shared_ptr<Client_data>>& i
 
 void Server_manager::disconnect_dead(const std::vector<shared_ptr<Client_data>>& dead, fd_set* clients_sockets) {
     for(const shared_ptr<Client_data>& client : dead) {
+        close(client->get_socket());
         FD_CLR(client->get_socket(), clients_sockets);
     }
     gm.disconnect_dead(dead);
