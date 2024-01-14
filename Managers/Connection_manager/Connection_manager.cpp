@@ -34,19 +34,16 @@ void Connection_manager::send_message(const std::string& responce,int client_soc
     send(client_socket, msg.c_str(), msg.size(), 0);
 }
 
-list<string> Connection_manager::get_msg_list(int client_socket) {
-    string msg = Connection_manager::recv_msg(client_socket);
-    return split_by_character(msg, MSG_SEPARATOR);
-}
-
 std::list<std::string> Connection_manager::split_by_character(const std::string& input, char character) {
     std::list<std::string> result;
     std::istringstream iss(input);
     std::string segment;
 
     while (std::getline(iss, segment, character)) {
-        segment.erase(remove_if(segment.begin(), segment.end(), ::isspace), segment.end()); // odstraneni bilých znaků
-        result.push_back(segment);
+        //segment.erase(remove_if(segment.begin(), segment.end(), ::isspace), segment.end()); // odstraneni bilých znaků
+        if (!segment.empty()) {
+            result.push_back(segment);
+        }
     }
 
     return result;

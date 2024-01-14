@@ -32,7 +32,7 @@ public:
      * @returns -1 if lobby is full
      * @returns -2 if player is already in some other lobby
      * @returns -3 client is already in this lobby
-     * @returns -4 if lobby client wants to join wasnt found
+     * @returns -4 if lobby that client wants to join wasnt found
      *
      * @see Lobby::add_player()
      */

@@ -53,7 +53,7 @@ void Server_manager::create_managers() {
         FD_SET( server_socket, &client_socks );
 
         for (;;) {
-            struct timeval timeout{std::min(PING_INTERVAL,TIME_TO_RECONNECT),0};
+            struct timeval timeout{std::min(PING_INTERVAL,TIME_TO_RECONNECT),PING_INTERVAL_US};
             tests = client_socks;
             // sada deskriptoru je po kazdem volani select prepsana sadou deskriptoru kde se neco delo
             return_value = select(FD_SETSIZE, &tests, (fd_set *) nullptr,
@@ -92,10 +92,9 @@ void Server_manager::create_managers() {
                                     v.push_back(c);
                                     kick_inactive(v);
                                 }
-                                else {
-                                    close(fd);
-                                    FD_CLR(fd, &client_socks);
-                                }
+
+                                close(fd);
+                                FD_CLR(fd, &client_socks);
                             }
                         }
                     }
@@ -109,12 +108,14 @@ void Server_manager::create_managers() {
 }
 
 void Server_manager::handle_request(int client_socket,  fd_set* clients_sockets) {
-    list<string> msg = con_m.get_msg_list(client_socket);
+    list<string> msgs = con_m.split_by_character(con_m.recv_msg(client_socket),'\n');
+    for(const string& message : msgs) {
+        list<string> msg_list = con_m.split_by_character(message, MSG_SEPARATOR);
+        int result = request_handler(msg_list, client_socket);
 
-    int result = request_handler(msg, client_socket);
-
-    if(result == NOT_REGISTERED_CLIENT || result == NO_VALID_REQUEST)
-        kill_socket(client_socket, clients_sockets);
+        if(result == NOT_REGISTERED_CLIENT || result == NO_VALID_REQUEST)
+            kill_socket(client_socket, clients_sockets);
+    }
 }
 
 int Server_manager::request_handler(list<string> request, int client_socket) {

@@ -16,6 +16,7 @@ void Game_manager::rejoin_client_to_game(const shared_ptr<Client_data>& client) 
     if(client_game->rejoin(client)) {
         cout<< "game rejoined" << endl;
         notify_others(client,"UPDATE","");
+        evaluate(client);
     }
 }
 

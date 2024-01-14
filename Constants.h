@@ -11,9 +11,10 @@
 #define MSG_SEPARATOR '|'
 
 #define PING_RESPONCE 69
-#define PING_INTERVAL 1             //[s]
-#define MAX_MISSED_PINGS 3
-#define TIME_TO_RECONNECT 60          //[s]
+#define PING_INTERVAL 5             //[s]
+#define PING_INTERVAL_US 0          //[us]
+#define MAX_MISSED_PINGS 1
+#define TIME_TO_RECONNECT 60        //[s]
 
 ///////////////// Client //////////////////////
 #define NAME_MAX_LENGTH 20
