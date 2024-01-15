@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/Viktor/CLionProjects/untitled4
+CMAKE_SOURCE_DIR = /mnt/c/Users/Viktor/CLionProjects/untitled4/server
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/Viktor/CLionProjects/untitled4/build
+CMAKE_BINARY_DIR = /mnt/c/Users/Viktor/CLionProjects/untitled4/server/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/server_ups.dir/depend.make
@@ -70,130 +70,130 @@ include CMakeFiles/server_ups.dir/progress.make
 include CMakeFiles/server_ups.dir/flags.make
 
 CMakeFiles/server_ups.dir/main.cpp.o: CMakeFiles/server_ups.dir/flags.make
-CMakeFiles/server_ups.dir/main.cpp.o: /mnt/c/Users/Viktor/CLionProjects/untitled4/main.cpp
+CMakeFiles/server_ups.dir/main.cpp.o: /mnt/c/Users/Viktor/CLionProjects/untitled4/server/main.cpp
 CMakeFiles/server_ups.dir/main.cpp.o: CMakeFiles/server_ups.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Viktor/CLionProjects/untitled4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/server_ups.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server_ups.dir/main.cpp.o -MF CMakeFiles/server_ups.dir/main.cpp.o.d -o CMakeFiles/server_ups.dir/main.cpp.o -c /mnt/c/Users/Viktor/CLionProjects/untitled4/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Viktor/CLionProjects/untitled4/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/server_ups.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server_ups.dir/main.cpp.o -MF CMakeFiles/server_ups.dir/main.cpp.o.d -o CMakeFiles/server_ups.dir/main.cpp.o -c /mnt/c/Users/Viktor/CLionProjects/untitled4/server/main.cpp
 
 CMakeFiles/server_ups.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server_ups.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Viktor/CLionProjects/untitled4/main.cpp > CMakeFiles/server_ups.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Viktor/CLionProjects/untitled4/server/main.cpp > CMakeFiles/server_ups.dir/main.cpp.i
 
 CMakeFiles/server_ups.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server_ups.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Viktor/CLionProjects/untitled4/main.cpp -o CMakeFiles/server_ups.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Viktor/CLionProjects/untitled4/server/main.cpp -o CMakeFiles/server_ups.dir/main.cpp.s
 
 CMakeFiles/server_ups.dir/Managers/Server_manager/Server_manager.cpp.o: CMakeFiles/server_ups.dir/flags.make
-CMakeFiles/server_ups.dir/Managers/Server_manager/Server_manager.cpp.o: /mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Server_manager/Server_manager.cpp
+CMakeFiles/server_ups.dir/Managers/Server_manager/Server_manager.cpp.o: /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Managers/Server_manager/Server_manager.cpp
 CMakeFiles/server_ups.dir/Managers/Server_manager/Server_manager.cpp.o: CMakeFiles/server_ups.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Viktor/CLionProjects/untitled4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/server_ups.dir/Managers/Server_manager/Server_manager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server_ups.dir/Managers/Server_manager/Server_manager.cpp.o -MF CMakeFiles/server_ups.dir/Managers/Server_manager/Server_manager.cpp.o.d -o CMakeFiles/server_ups.dir/Managers/Server_manager/Server_manager.cpp.o -c /mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Server_manager/Server_manager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Viktor/CLionProjects/untitled4/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/server_ups.dir/Managers/Server_manager/Server_manager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server_ups.dir/Managers/Server_manager/Server_manager.cpp.o -MF CMakeFiles/server_ups.dir/Managers/Server_manager/Server_manager.cpp.o.d -o CMakeFiles/server_ups.dir/Managers/Server_manager/Server_manager.cpp.o -c /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Managers/Server_manager/Server_manager.cpp
 
 CMakeFiles/server_ups.dir/Managers/Server_manager/Server_manager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server_ups.dir/Managers/Server_manager/Server_manager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Server_manager/Server_manager.cpp > CMakeFiles/server_ups.dir/Managers/Server_manager/Server_manager.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Managers/Server_manager/Server_manager.cpp > CMakeFiles/server_ups.dir/Managers/Server_manager/Server_manager.cpp.i
 
 CMakeFiles/server_ups.dir/Managers/Server_manager/Server_manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server_ups.dir/Managers/Server_manager/Server_manager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Server_manager/Server_manager.cpp -o CMakeFiles/server_ups.dir/Managers/Server_manager/Server_manager.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Managers/Server_manager/Server_manager.cpp -o CMakeFiles/server_ups.dir/Managers/Server_manager/Server_manager.cpp.s
 
 CMakeFiles/server_ups.dir/Managers/Connection_manager/Connection_manager.cpp.o: CMakeFiles/server_ups.dir/flags.make
-CMakeFiles/server_ups.dir/Managers/Connection_manager/Connection_manager.cpp.o: /mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Connection_manager/Connection_manager.cpp
+CMakeFiles/server_ups.dir/Managers/Connection_manager/Connection_manager.cpp.o: /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Managers/Connection_manager/Connection_manager.cpp
 CMakeFiles/server_ups.dir/Managers/Connection_manager/Connection_manager.cpp.o: CMakeFiles/server_ups.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Viktor/CLionProjects/untitled4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/server_ups.dir/Managers/Connection_manager/Connection_manager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server_ups.dir/Managers/Connection_manager/Connection_manager.cpp.o -MF CMakeFiles/server_ups.dir/Managers/Connection_manager/Connection_manager.cpp.o.d -o CMakeFiles/server_ups.dir/Managers/Connection_manager/Connection_manager.cpp.o -c /mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Connection_manager/Connection_manager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Viktor/CLionProjects/untitled4/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/server_ups.dir/Managers/Connection_manager/Connection_manager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server_ups.dir/Managers/Connection_manager/Connection_manager.cpp.o -MF CMakeFiles/server_ups.dir/Managers/Connection_manager/Connection_manager.cpp.o.d -o CMakeFiles/server_ups.dir/Managers/Connection_manager/Connection_manager.cpp.o -c /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Managers/Connection_manager/Connection_manager.cpp
 
 CMakeFiles/server_ups.dir/Managers/Connection_manager/Connection_manager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server_ups.dir/Managers/Connection_manager/Connection_manager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Connection_manager/Connection_manager.cpp > CMakeFiles/server_ups.dir/Managers/Connection_manager/Connection_manager.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Managers/Connection_manager/Connection_manager.cpp > CMakeFiles/server_ups.dir/Managers/Connection_manager/Connection_manager.cpp.i
 
 CMakeFiles/server_ups.dir/Managers/Connection_manager/Connection_manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server_ups.dir/Managers/Connection_manager/Connection_manager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Connection_manager/Connection_manager.cpp -o CMakeFiles/server_ups.dir/Managers/Connection_manager/Connection_manager.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Managers/Connection_manager/Connection_manager.cpp -o CMakeFiles/server_ups.dir/Managers/Connection_manager/Connection_manager.cpp.s
 
 CMakeFiles/server_ups.dir/Managers/Client_manager/Client_manager.cpp.o: CMakeFiles/server_ups.dir/flags.make
-CMakeFiles/server_ups.dir/Managers/Client_manager/Client_manager.cpp.o: /mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Client_manager/Client_manager.cpp
+CMakeFiles/server_ups.dir/Managers/Client_manager/Client_manager.cpp.o: /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Managers/Client_manager/Client_manager.cpp
 CMakeFiles/server_ups.dir/Managers/Client_manager/Client_manager.cpp.o: CMakeFiles/server_ups.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Viktor/CLionProjects/untitled4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/server_ups.dir/Managers/Client_manager/Client_manager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server_ups.dir/Managers/Client_manager/Client_manager.cpp.o -MF CMakeFiles/server_ups.dir/Managers/Client_manager/Client_manager.cpp.o.d -o CMakeFiles/server_ups.dir/Managers/Client_manager/Client_manager.cpp.o -c /mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Client_manager/Client_manager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Viktor/CLionProjects/untitled4/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/server_ups.dir/Managers/Client_manager/Client_manager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server_ups.dir/Managers/Client_manager/Client_manager.cpp.o -MF CMakeFiles/server_ups.dir/Managers/Client_manager/Client_manager.cpp.o.d -o CMakeFiles/server_ups.dir/Managers/Client_manager/Client_manager.cpp.o -c /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Managers/Client_manager/Client_manager.cpp
 
 CMakeFiles/server_ups.dir/Managers/Client_manager/Client_manager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server_ups.dir/Managers/Client_manager/Client_manager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Client_manager/Client_manager.cpp > CMakeFiles/server_ups.dir/Managers/Client_manager/Client_manager.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Managers/Client_manager/Client_manager.cpp > CMakeFiles/server_ups.dir/Managers/Client_manager/Client_manager.cpp.i
 
 CMakeFiles/server_ups.dir/Managers/Client_manager/Client_manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server_ups.dir/Managers/Client_manager/Client_manager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Client_manager/Client_manager.cpp -o CMakeFiles/server_ups.dir/Managers/Client_manager/Client_manager.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Managers/Client_manager/Client_manager.cpp -o CMakeFiles/server_ups.dir/Managers/Client_manager/Client_manager.cpp.s
 
 CMakeFiles/server_ups.dir/Managers/Lobby_manager/Lobby_manager.cpp.o: CMakeFiles/server_ups.dir/flags.make
-CMakeFiles/server_ups.dir/Managers/Lobby_manager/Lobby_manager.cpp.o: /mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Lobby_manager/Lobby_manager.cpp
+CMakeFiles/server_ups.dir/Managers/Lobby_manager/Lobby_manager.cpp.o: /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Managers/Lobby_manager/Lobby_manager.cpp
 CMakeFiles/server_ups.dir/Managers/Lobby_manager/Lobby_manager.cpp.o: CMakeFiles/server_ups.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Viktor/CLionProjects/untitled4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/server_ups.dir/Managers/Lobby_manager/Lobby_manager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server_ups.dir/Managers/Lobby_manager/Lobby_manager.cpp.o -MF CMakeFiles/server_ups.dir/Managers/Lobby_manager/Lobby_manager.cpp.o.d -o CMakeFiles/server_ups.dir/Managers/Lobby_manager/Lobby_manager.cpp.o -c /mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Lobby_manager/Lobby_manager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Viktor/CLionProjects/untitled4/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/server_ups.dir/Managers/Lobby_manager/Lobby_manager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server_ups.dir/Managers/Lobby_manager/Lobby_manager.cpp.o -MF CMakeFiles/server_ups.dir/Managers/Lobby_manager/Lobby_manager.cpp.o.d -o CMakeFiles/server_ups.dir/Managers/Lobby_manager/Lobby_manager.cpp.o -c /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Managers/Lobby_manager/Lobby_manager.cpp
 
 CMakeFiles/server_ups.dir/Managers/Lobby_manager/Lobby_manager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server_ups.dir/Managers/Lobby_manager/Lobby_manager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Lobby_manager/Lobby_manager.cpp > CMakeFiles/server_ups.dir/Managers/Lobby_manager/Lobby_manager.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Managers/Lobby_manager/Lobby_manager.cpp > CMakeFiles/server_ups.dir/Managers/Lobby_manager/Lobby_manager.cpp.i
 
 CMakeFiles/server_ups.dir/Managers/Lobby_manager/Lobby_manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server_ups.dir/Managers/Lobby_manager/Lobby_manager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Lobby_manager/Lobby_manager.cpp -o CMakeFiles/server_ups.dir/Managers/Lobby_manager/Lobby_manager.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Managers/Lobby_manager/Lobby_manager.cpp -o CMakeFiles/server_ups.dir/Managers/Lobby_manager/Lobby_manager.cpp.s
 
 CMakeFiles/server_ups.dir/Client_data/Client_data.cpp.o: CMakeFiles/server_ups.dir/flags.make
-CMakeFiles/server_ups.dir/Client_data/Client_data.cpp.o: /mnt/c/Users/Viktor/CLionProjects/untitled4/Client_data/Client_data.cpp
+CMakeFiles/server_ups.dir/Client_data/Client_data.cpp.o: /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Client_data/Client_data.cpp
 CMakeFiles/server_ups.dir/Client_data/Client_data.cpp.o: CMakeFiles/server_ups.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Viktor/CLionProjects/untitled4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/server_ups.dir/Client_data/Client_data.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server_ups.dir/Client_data/Client_data.cpp.o -MF CMakeFiles/server_ups.dir/Client_data/Client_data.cpp.o.d -o CMakeFiles/server_ups.dir/Client_data/Client_data.cpp.o -c /mnt/c/Users/Viktor/CLionProjects/untitled4/Client_data/Client_data.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Viktor/CLionProjects/untitled4/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/server_ups.dir/Client_data/Client_data.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server_ups.dir/Client_data/Client_data.cpp.o -MF CMakeFiles/server_ups.dir/Client_data/Client_data.cpp.o.d -o CMakeFiles/server_ups.dir/Client_data/Client_data.cpp.o -c /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Client_data/Client_data.cpp
 
 CMakeFiles/server_ups.dir/Client_data/Client_data.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server_ups.dir/Client_data/Client_data.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Viktor/CLionProjects/untitled4/Client_data/Client_data.cpp > CMakeFiles/server_ups.dir/Client_data/Client_data.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Client_data/Client_data.cpp > CMakeFiles/server_ups.dir/Client_data/Client_data.cpp.i
 
 CMakeFiles/server_ups.dir/Client_data/Client_data.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server_ups.dir/Client_data/Client_data.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Viktor/CLionProjects/untitled4/Client_data/Client_data.cpp -o CMakeFiles/server_ups.dir/Client_data/Client_data.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Client_data/Client_data.cpp -o CMakeFiles/server_ups.dir/Client_data/Client_data.cpp.s
 
 CMakeFiles/server_ups.dir/Lobby/Lobby.cpp.o: CMakeFiles/server_ups.dir/flags.make
-CMakeFiles/server_ups.dir/Lobby/Lobby.cpp.o: /mnt/c/Users/Viktor/CLionProjects/untitled4/Lobby/Lobby.cpp
+CMakeFiles/server_ups.dir/Lobby/Lobby.cpp.o: /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Lobby/Lobby.cpp
 CMakeFiles/server_ups.dir/Lobby/Lobby.cpp.o: CMakeFiles/server_ups.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Viktor/CLionProjects/untitled4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/server_ups.dir/Lobby/Lobby.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server_ups.dir/Lobby/Lobby.cpp.o -MF CMakeFiles/server_ups.dir/Lobby/Lobby.cpp.o.d -o CMakeFiles/server_ups.dir/Lobby/Lobby.cpp.o -c /mnt/c/Users/Viktor/CLionProjects/untitled4/Lobby/Lobby.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Viktor/CLionProjects/untitled4/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/server_ups.dir/Lobby/Lobby.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server_ups.dir/Lobby/Lobby.cpp.o -MF CMakeFiles/server_ups.dir/Lobby/Lobby.cpp.o.d -o CMakeFiles/server_ups.dir/Lobby/Lobby.cpp.o -c /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Lobby/Lobby.cpp
 
 CMakeFiles/server_ups.dir/Lobby/Lobby.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server_ups.dir/Lobby/Lobby.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Viktor/CLionProjects/untitled4/Lobby/Lobby.cpp > CMakeFiles/server_ups.dir/Lobby/Lobby.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Lobby/Lobby.cpp > CMakeFiles/server_ups.dir/Lobby/Lobby.cpp.i
 
 CMakeFiles/server_ups.dir/Lobby/Lobby.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server_ups.dir/Lobby/Lobby.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Viktor/CLionProjects/untitled4/Lobby/Lobby.cpp -o CMakeFiles/server_ups.dir/Lobby/Lobby.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Lobby/Lobby.cpp -o CMakeFiles/server_ups.dir/Lobby/Lobby.cpp.s
 
 CMakeFiles/server_ups.dir/Game/Game.cpp.o: CMakeFiles/server_ups.dir/flags.make
-CMakeFiles/server_ups.dir/Game/Game.cpp.o: /mnt/c/Users/Viktor/CLionProjects/untitled4/Game/Game.cpp
+CMakeFiles/server_ups.dir/Game/Game.cpp.o: /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Game/Game.cpp
 CMakeFiles/server_ups.dir/Game/Game.cpp.o: CMakeFiles/server_ups.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Viktor/CLionProjects/untitled4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/server_ups.dir/Game/Game.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server_ups.dir/Game/Game.cpp.o -MF CMakeFiles/server_ups.dir/Game/Game.cpp.o.d -o CMakeFiles/server_ups.dir/Game/Game.cpp.o -c /mnt/c/Users/Viktor/CLionProjects/untitled4/Game/Game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Viktor/CLionProjects/untitled4/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/server_ups.dir/Game/Game.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server_ups.dir/Game/Game.cpp.o -MF CMakeFiles/server_ups.dir/Game/Game.cpp.o.d -o CMakeFiles/server_ups.dir/Game/Game.cpp.o -c /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Game/Game.cpp
 
 CMakeFiles/server_ups.dir/Game/Game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server_ups.dir/Game/Game.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Viktor/CLionProjects/untitled4/Game/Game.cpp > CMakeFiles/server_ups.dir/Game/Game.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Game/Game.cpp > CMakeFiles/server_ups.dir/Game/Game.cpp.i
 
 CMakeFiles/server_ups.dir/Game/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server_ups.dir/Game/Game.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Viktor/CLionProjects/untitled4/Game/Game.cpp -o CMakeFiles/server_ups.dir/Game/Game.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Game/Game.cpp -o CMakeFiles/server_ups.dir/Game/Game.cpp.s
 
 CMakeFiles/server_ups.dir/Managers/Game_manager/Game_manager.cpp.o: CMakeFiles/server_ups.dir/flags.make
-CMakeFiles/server_ups.dir/Managers/Game_manager/Game_manager.cpp.o: /mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Game_manager/Game_manager.cpp
+CMakeFiles/server_ups.dir/Managers/Game_manager/Game_manager.cpp.o: /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Managers/Game_manager/Game_manager.cpp
 CMakeFiles/server_ups.dir/Managers/Game_manager/Game_manager.cpp.o: CMakeFiles/server_ups.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Viktor/CLionProjects/untitled4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/server_ups.dir/Managers/Game_manager/Game_manager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server_ups.dir/Managers/Game_manager/Game_manager.cpp.o -MF CMakeFiles/server_ups.dir/Managers/Game_manager/Game_manager.cpp.o.d -o CMakeFiles/server_ups.dir/Managers/Game_manager/Game_manager.cpp.o -c /mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Game_manager/Game_manager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Viktor/CLionProjects/untitled4/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/server_ups.dir/Managers/Game_manager/Game_manager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server_ups.dir/Managers/Game_manager/Game_manager.cpp.o -MF CMakeFiles/server_ups.dir/Managers/Game_manager/Game_manager.cpp.o.d -o CMakeFiles/server_ups.dir/Managers/Game_manager/Game_manager.cpp.o -c /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Managers/Game_manager/Game_manager.cpp
 
 CMakeFiles/server_ups.dir/Managers/Game_manager/Game_manager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server_ups.dir/Managers/Game_manager/Game_manager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Game_manager/Game_manager.cpp > CMakeFiles/server_ups.dir/Managers/Game_manager/Game_manager.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Managers/Game_manager/Game_manager.cpp > CMakeFiles/server_ups.dir/Managers/Game_manager/Game_manager.cpp.i
 
 CMakeFiles/server_ups.dir/Managers/Game_manager/Game_manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server_ups.dir/Managers/Game_manager/Game_manager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Game_manager/Game_manager.cpp -o CMakeFiles/server_ups.dir/Managers/Game_manager/Game_manager.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Managers/Game_manager/Game_manager.cpp -o CMakeFiles/server_ups.dir/Managers/Game_manager/Game_manager.cpp.s
 
 # Object files for target server_ups
 server_ups_OBJECTS = \
@@ -221,7 +221,7 @@ server_ups: CMakeFiles/server_ups.dir/Game/Game.cpp.o
 server_ups: CMakeFiles/server_ups.dir/Managers/Game_manager/Game_manager.cpp.o
 server_ups: CMakeFiles/server_ups.dir/build.make
 server_ups: CMakeFiles/server_ups.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/Viktor/CLionProjects/untitled4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable server_ups"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/Viktor/CLionProjects/untitled4/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable server_ups"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/server_ups.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -233,6 +233,6 @@ CMakeFiles/server_ups.dir/clean:
 .PHONY : CMakeFiles/server_ups.dir/clean
 
 CMakeFiles/server_ups.dir/depend:
-	cd /mnt/c/Users/Viktor/CLionProjects/untitled4/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/Viktor/CLionProjects/untitled4 /mnt/c/Users/Viktor/CLionProjects/untitled4 /mnt/c/Users/Viktor/CLionProjects/untitled4/build /mnt/c/Users/Viktor/CLionProjects/untitled4/build /mnt/c/Users/Viktor/CLionProjects/untitled4/build/CMakeFiles/server_ups.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/c/Users/Viktor/CLionProjects/untitled4/server/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/Viktor/CLionProjects/untitled4/server /mnt/c/Users/Viktor/CLionProjects/untitled4/server /mnt/c/Users/Viktor/CLionProjects/untitled4/server/build /mnt/c/Users/Viktor/CLionProjects/untitled4/server/build /mnt/c/Users/Viktor/CLionProjects/untitled4/server/build/CMakeFiles/server_ups.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/server_ups.dir/depend
 

@@ -1,8 +1,8 @@
 CMakeFiles/server_ups.dir/Managers/Connection_manager/Connection_manager.cpp.o: \
- /mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Connection_manager/Connection_manager.cpp \
+ /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Managers/Connection_manager/Connection_manager.cpp \
  /usr/include/stdc-predef.h \
- /mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Connection_manager/Connection_manager.h \
- /mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Connection_manager/../../Constants.h \
+ /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Managers/Connection_manager/Connection_manager.h \
+ /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Managers/Connection_manager/../../Constants.h \
  /usr/include/c++/12/climits \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \

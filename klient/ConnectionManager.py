@@ -200,7 +200,7 @@ class ConnectionManager:
             self.last_login = login
             self.last_message = datetime.now()
             self.PING_CYCLE = int(msg[2][0])
-            self.max_message_gap = self.PING_CYCLE * int(msg[2][1])
+            self.max_message_gap = self.PING_CYCLE * int(msg[2][1]) + 0.5
             print("setting done with ", msg)
         else:
             self.client_socket = None
