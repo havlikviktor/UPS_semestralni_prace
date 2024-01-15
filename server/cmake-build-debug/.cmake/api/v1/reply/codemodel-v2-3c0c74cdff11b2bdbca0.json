@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/mnt/c/Users/Viktor/CLionProjects/untitled4/cmake-build-debug",
-		"source" : "/mnt/c/Users/Viktor/CLionProjects/untitled4"
+		"build" : "/mnt/c/Users/Viktor/CLionProjects/untitled4/server/cmake-build-debug",
+		"source" : "/mnt/c/Users/Viktor/CLionProjects/untitled4/server"
 	},
 	"version" : 
 	{

@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/mnt/c/Users/Viktor/CLionProjects/untitled4/cmake-build-debug"
+			"value" : "/mnt/c/Users/Viktor/CLionProjects/untitled4/server/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -627,7 +627,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/mnt/c/Users/Viktor/CLionProjects/untitled4/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/mnt/c/Users/Viktor/CLionProjects/untitled4/server/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -687,7 +687,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/mnt/c/Users/Viktor/CLionProjects/untitled4"
+			"value" : "/mnt/c/Users/Viktor/CLionProjects/untitled4/server"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1267,7 +1267,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/mnt/c/Users/Viktor/CLionProjects/untitled4/cmake-build-debug"
+			"value" : "/mnt/c/Users/Viktor/CLionProjects/untitled4/server/cmake-build-debug"
 		},
 		{
 			"name" : "untitled4_IS_TOP_LEVEL",
@@ -1291,7 +1291,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/mnt/c/Users/Viktor/CLionProjects/untitled4"
+			"value" : "/mnt/c/Users/Viktor/CLionProjects/untitled4/server"
 		}
 	],
 	"kind" : "cache",

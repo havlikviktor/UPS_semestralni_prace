@@ -1,8 +1,8 @@
 CMakeFiles/server_ups.dir/Lobby/Lobby.cpp.o: \
- /mnt/c/Users/Viktor/CLionProjects/untitled4/Lobby/Lobby.cpp \
+ /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Lobby/Lobby.cpp \
  /usr/include/stdc-predef.h \
- /mnt/c/Users/Viktor/CLionProjects/untitled4/Lobby/Lobby.h \
- /mnt/c/Users/Viktor/CLionProjects/untitled4/Lobby/../Client_data/Client_data.h \
+ /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Lobby/Lobby.h \
+ /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Lobby/../Client_data/Client_data.h \
  /usr/include/c++/12/string \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
@@ -124,10 +124,10 @@ CMakeFiles/server_ups.dir/Lobby/Lobby.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
  /usr/include/c++/12/bits/parse_numbers.h \
- /mnt/c/Users/Viktor/CLionProjects/untitled4/Lobby/../Client_data/../Lobby/Lobby.h \
- /mnt/c/Users/Viktor/CLionProjects/untitled4/Lobby/../Client_data/../Game/Game.h \
- /mnt/c/Users/Viktor/CLionProjects/untitled4/Lobby/../Client_data/../Game/../Client_data/Client_data.h \
- /mnt/c/Users/Viktor/CLionProjects/untitled4/Lobby/../Client_data/../Game/../Constants.h \
+ /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Lobby/../Client_data/../Lobby/Lobby.h \
+ /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Lobby/../Client_data/../Game/Game.h \
+ /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Lobby/../Client_data/../Game/../Client_data/Client_data.h \
+ /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Lobby/../Client_data/../Game/../Constants.h \
  /usr/include/c++/12/climits \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/syslimits.h \
@@ -196,6 +196,6 @@ CMakeFiles/server_ups.dir/Lobby/Lobby.cpp.o: \
  /usr/include/c++/12/backward/auto_ptr.h \
  /usr/include/c++/12/pstl/glue_memory_defs.h \
  /usr/include/c++/12/pstl/execution_defs.h \
- /mnt/c/Users/Viktor/CLionProjects/untitled4/Lobby/../Client_data/../Constants.h \
- /mnt/c/Users/Viktor/CLionProjects/untitled4/Lobby/../Game/Game.h \
- /mnt/c/Users/Viktor/CLionProjects/untitled4/Lobby/../Constants.h
+ /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Lobby/../Client_data/../Constants.h \
+ /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Lobby/../Game/Game.h \
+ /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Lobby/../Constants.h

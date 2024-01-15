@@ -1,5 +1,5 @@
 CMakeFiles/server_ups.dir/Game/Game.cpp.o: \
- /mnt/c/Users/Viktor/CLionProjects/untitled4/Game/Game.cpp \
+ /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Game/Game.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/12/random \
  /usr/include/c++/12/cmath \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
@@ -146,8 +146,8 @@ CMakeFiles/server_ups.dir/Game/Game.cpp.o: \
  /usr/include/c++/12/bits/stl_numeric.h /usr/include/c++/12/bit \
  /usr/include/c++/12/pstl/glue_numeric_defs.h \
  /usr/include/c++/12/pstl/execution_defs.h \
- /mnt/c/Users/Viktor/CLionProjects/untitled4/Game/Game.h \
- /mnt/c/Users/Viktor/CLionProjects/untitled4/Game/../Client_data/Client_data.h \
+ /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Game/Game.h \
+ /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Game/../Client_data/Client_data.h \
  /usr/include/c++/12/chrono /usr/include/c++/12/bits/chrono.h \
  /usr/include/c++/12/ratio /usr/include/c++/12/ctime /usr/include/time.h \
  /usr/include/x86_64-linux-gnu/bits/time.h \
@@ -155,10 +155,10 @@ CMakeFiles/server_ups.dir/Game/Game.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
  /usr/include/c++/12/bits/parse_numbers.h \
- /mnt/c/Users/Viktor/CLionProjects/untitled4/Game/../Client_data/../Lobby/Lobby.h \
- /mnt/c/Users/Viktor/CLionProjects/untitled4/Game/../Client_data/../Lobby/../Client_data/Client_data.h \
- /mnt/c/Users/Viktor/CLionProjects/untitled4/Game/../Client_data/../Lobby/../Game/Game.h \
- /mnt/c/Users/Viktor/CLionProjects/untitled4/Game/../Client_data/../Lobby/../Constants.h \
+ /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Game/../Client_data/../Lobby/Lobby.h \
+ /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Game/../Client_data/../Lobby/../Client_data/Client_data.h \
+ /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Game/../Client_data/../Lobby/../Game/Game.h \
+ /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Game/../Client_data/../Lobby/../Constants.h \
  /usr/include/c++/12/climits \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/syslimits.h \
@@ -216,9 +216,9 @@ CMakeFiles/server_ups.dir/Game/Game.cpp.o: \
  /usr/include/c++/12/bits/basic_ios.tcc \
  /usr/include/c++/12/bits/ostream.tcc /usr/include/c++/12/istream \
  /usr/include/c++/12/bits/istream.tcc \
- /mnt/c/Users/Viktor/CLionProjects/untitled4/Game/../Client_data/../Game/Game.h \
- /mnt/c/Users/Viktor/CLionProjects/untitled4/Game/../Client_data/../Constants.h \
- /mnt/c/Users/Viktor/CLionProjects/untitled4/Game/../Constants.h \
+ /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Game/../Client_data/../Game/Game.h \
+ /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Game/../Client_data/../Constants.h \
+ /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Game/../Constants.h \
  /usr/include/c++/12/utility /usr/include/c++/12/bits/stl_relops.h \
  /usr/include/c++/12/unordered_map /usr/include/c++/12/bits/hashtable.h \
  /usr/include/c++/12/bits/hashtable_policy.h \

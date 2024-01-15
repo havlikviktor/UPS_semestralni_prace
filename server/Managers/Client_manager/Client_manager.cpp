@@ -113,8 +113,10 @@ void Client_manager::ping_all() {
 void Client_manager::reset_pings() {
     for(shared_ptr<Client_data>& client : clients) {
         if(client->get_status() != INVALID_STATUS && client->get_status() != RECONNECTING_STATUS) {
-            if(client->is_alive())
+            if(client->is_alive()) {
                 client->set_alive_state(false);
+                client->reset_pings();
+            }
             else {
                 client->add_missed_ping();
                 cout << client->get_client_name() << " missed ping" << endl;

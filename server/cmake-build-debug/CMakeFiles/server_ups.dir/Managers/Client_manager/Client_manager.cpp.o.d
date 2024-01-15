@@ -1,7 +1,7 @@
 CMakeFiles/server_ups.dir/Managers/Client_manager/Client_manager.cpp.o: \
- /mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Client_manager/Client_manager.cpp \
+ /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Managers/Client_manager/Client_manager.cpp \
  /usr/include/stdc-predef.h \
- /mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Client_manager/Client_manager.h \
+ /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Managers/Client_manager/Client_manager.h \
  /usr/include/c++/12/list /usr/include/c++/12/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
@@ -41,8 +41,8 @@ CMakeFiles/server_ups.dir/Managers/Client_manager/Client_manager.cpp.o: \
  /usr/include/c++/12/bits/allocated_ptr.h \
  /usr/include/c++/12/ext/aligned_buffer.h \
  /usr/include/c++/12/bits/list.tcc \
- /mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Client_manager/../Connection_manager/Connection_manager.h \
- /mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Client_manager/../Connection_manager/../../Constants.h \
+ /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Managers/Client_manager/../Connection_manager/Connection_manager.h \
+ /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Managers/Client_manager/../Connection_manager/../../Constants.h \
  /usr/include/c++/12/climits \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/syslimits.h \
@@ -200,15 +200,15 @@ CMakeFiles/server_ups.dir/Managers/Client_manager/Client_manager.cpp.o: \
  /usr/include/c++/12/bits/uniform_int_dist.h \
  /usr/include/c++/12/pstl/glue_algorithm_defs.h \
  /usr/include/c++/12/pstl/execution_defs.h \
- /mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Client_manager/../../Client_data/Client_data.h \
+ /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Managers/Client_manager/../../Client_data/Client_data.h \
  /usr/include/c++/12/chrono /usr/include/c++/12/bits/chrono.h \
  /usr/include/c++/12/ratio /usr/include/c++/12/limits \
  /usr/include/c++/12/ctime /usr/include/c++/12/bits/parse_numbers.h \
- /mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Client_manager/../../Client_data/../Lobby/Lobby.h \
- /mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Client_manager/../../Client_data/../Lobby/../Client_data/Client_data.h \
- /mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Client_manager/../../Client_data/../Lobby/../Game/Game.h \
- /mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Client_manager/../../Client_data/../Lobby/../Game/../Client_data/Client_data.h \
- /mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Client_manager/../../Client_data/../Lobby/../Game/../Constants.h \
+ /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Managers/Client_manager/../../Client_data/../Lobby/Lobby.h \
+ /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Managers/Client_manager/../../Client_data/../Lobby/../Client_data/Client_data.h \
+ /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Managers/Client_manager/../../Client_data/../Lobby/../Game/Game.h \
+ /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Managers/Client_manager/../../Client_data/../Lobby/../Game/../Client_data/Client_data.h \
+ /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Managers/Client_manager/../../Client_data/../Lobby/../Game/../Constants.h \
  /usr/include/c++/12/utility /usr/include/c++/12/bits/stl_relops.h \
  /usr/include/c++/12/unordered_map /usr/include/c++/12/bits/hashtable.h \
  /usr/include/c++/12/bits/hashtable_policy.h /usr/include/c++/12/tuple \
@@ -228,6 +228,6 @@ CMakeFiles/server_ups.dir/Managers/Client_manager/Client_manager.cpp.o: \
  /usr/include/c++/12/bits/atomic_lockfree_defines.h \
  /usr/include/c++/12/backward/auto_ptr.h \
  /usr/include/c++/12/pstl/glue_memory_defs.h \
- /mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Client_manager/../../Client_data/../Lobby/../Constants.h \
- /mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Client_manager/../../Client_data/../Game/Game.h \
- /mnt/c/Users/Viktor/CLionProjects/untitled4/Managers/Client_manager/../../Client_data/../Constants.h
+ /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Managers/Client_manager/../../Client_data/../Lobby/../Constants.h \
+ /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Managers/Client_manager/../../Client_data/../Game/Game.h \
+ /mnt/c/Users/Viktor/CLionProjects/untitled4/server/Managers/Client_manager/../../Client_data/../Constants.h
