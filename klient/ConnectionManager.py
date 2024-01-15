@@ -95,26 +95,29 @@ class ConnectionManager:
                 time.sleep(0.5)
 
     def handle_data_stream(self, stream):
+        print("data_stream", stream)
         data_stream = stream.split(b'\n')
-        for data in data_stream:
+        valid = False
 
+        for data in data_stream:
             try:
                 action = data.decode('utf-8').split('|')[0]
             except UnicodeDecodeError:
                 print("[Con.M] data are not in utf-8")
-                return False
+                continue
 
             if action == "OK" or action == "ERR":
                 print("[Con.M] putting data into direct", data)
                 self.direct.put(data)
-                return True
+                valid = True
             elif action == "START" or action == "UPDATE" or action == "WINNER" or action == "GAMER" or action == "PING":
                 print("[Con.M] putting data into indirect", data)
                 self.indirect.put(data)
-                return True
+                valid = True
             else:
                 print("[Con.M] throwing away data", data)
-                return False
+
+        return valid
 
     def check_connection(self):
         if self.last_message is None or self.client_socket is None:
