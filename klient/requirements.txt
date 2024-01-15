@@ -1,0 +1,7 @@
+balíček PILL, customtkiter
+
+instalaci provedeme takže, že otevřeme terminál v kořenovém adresáři programu a zadáme příkazy:
+
+1. pip install customtkinter
+2. pip install customtkinter --upgrade
+3. pip install Pillow
