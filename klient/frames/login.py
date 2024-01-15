@@ -7,7 +7,7 @@ clientConnection = None
 
 def button_wrapper(entry_ip, entry_port, entry_name, label_info, app):
     result = button_connect(entry_ip, entry_port, entry_name)
-    if result[0] == 0 or result[0] == 1:
+    if result[0] == 1:
         label_info.configure(text=result[1], text_color='green')
         app.frame_manager(1)
     if result[0] == 2:

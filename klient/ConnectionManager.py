@@ -36,6 +36,19 @@ def decode_object(data):
     return objects
 
 
+def get_local_ip():
+    try:
+        # Create a temporary socket and connect to an external server
+        # to get the local IP address assigned to the machine
+        temp_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        temp_socket.connect(("8.8.8.8", 80))
+        local_ip = temp_socket.getsockname()[0]
+        temp_socket.close()
+        return local_ip
+    except socket.error:
+        return "127.0.0.1"  # Default to localhost if unable to determine the local IP
+
+
 class ConnectionManager:
     indirect, direct, to_send = queue.Queue(), queue.Queue(), queue.Queue()
 
@@ -178,6 +191,8 @@ class ConnectionManager:
             self.client_socket.send(msg.encode())
 
     def connect_server(self, ip, port, login, release=None):
+        if ip == "localhost":
+            ip = get_local_ip()
         server_address = (ip, port)
         try:
             self.client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -200,7 +215,7 @@ class ConnectionManager:
             self.last_login = login
             self.last_message = datetime.now()
             self.PING_CYCLE = int(msg[2][0])
-            self.max_message_gap = self.PING_CYCLE * int(msg[2][1]) + 0.5
+            self.max_message_gap = self.PING_CYCLE * int(msg[2][1]) + 2
             print("setting done with ", msg)
         else:
             self.client_socket = None
