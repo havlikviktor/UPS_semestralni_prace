@@ -73,7 +73,7 @@ class ConnectionManager:
         self.last_message = None
 
         while not self.to_send.empty():
-            self.direct.get()
+            self.to_send.get()
 
     def start_listening(self):
         while True:
