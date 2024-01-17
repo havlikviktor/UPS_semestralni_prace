@@ -93,7 +93,7 @@ def get_login(app):
     label_name.pack(pady=0, ipady=0)
     label_info.pack(side='bottom', pady=5)
 
-    entry_ip.insert(0, "localhost")
+    entry_ip.insert(0, "147.228.67.107")
     entry_port.insert(0, "10000")
     entry_name.insert(0, "viktor")
 

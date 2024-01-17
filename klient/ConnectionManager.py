@@ -66,36 +66,48 @@ class ConnectionManager:
         self.callback = None
         self.lock = threading.Lock()
 
+    def disconnect(self):
+        self.client_socket.close()
+        self.client_socket = None
+        self.last_message = None
+
     def start_listening(self):
         while True:
             if self.client_socket is not None:
-                read_sockets = [self.client_socket]
-                write_sockets = []
-                error_sockets = [self.client_socket]
+                try:
+                    read_sockets = [self.client_socket]
+                    write_sockets = []
+                    error_sockets = [self.client_socket]
 
-                readable, writable, exceptional = select.select(read_sockets, write_sockets, error_sockets,
-                                                                self.LISTEN_TIMEOUT)
+                    readable, writable, exceptional = select.select(read_sockets, write_sockets, error_sockets,
+                                                                    self.LISTEN_TIMEOUT)
 
-                for sock in readable:
-                    if sock == self.client_socket:
+                    for sock in readable:
+                        if sock == self.client_socket:
 
-                        stream = self.client_socket.recv(1024)
+                            stream = self.client_socket.recv(1024)
 
-                        if len(stream) > 1024:
-                            pass
+                            if len(stream) < 1024:
+                                if self.handle_data_stream(stream):
+                                    self.last_message = datetime.now()
+                            else:
+                                print("not accepting data")
+                                self.disconnect()
 
-                        if self.handle_data_stream(stream):
-                            self.last_message = datetime.now()
-
-                self.check_connection()
-                self.handle_indirect_queue()
-                self.send_pending_messages()
+                    if self.client_socket is not None:
+                        self.check_connection()
+                        self.handle_indirect_queue()
+                        self.send_pending_messages()
+                except OSError:
+                    print("socket is invalid")
+                except Exception as e:
+                    print(e)
+                    time.sleep(0.5)
             else:
                 self.handle_indirect_queue()
                 time.sleep(0.5)
 
     def handle_data_stream(self, stream):
-        print("data_stream", stream)
         data_stream = stream.split(b'\n')
         valid = False
 
@@ -115,7 +127,8 @@ class ConnectionManager:
                 self.indirect.put(data)
                 valid = True
             else:
-                print("[Con.M] throwing away data", data)
+                pass
+                # print("[Con.M] throwing away data", data)
 
         return valid
 
@@ -191,7 +204,10 @@ class ConnectionManager:
             if not msg == "PONG":
                 print("[Con.M] sanding message to server", msg)
             msg = msg + "\n"
-            self.client_socket.send(msg.encode())
+            try:
+                self.client_socket.send(msg.encode())
+            except Exception:
+                print(f"cant send message to server")
 
     def connect_server(self, ip, port, login, release=None):
         if ip == "localhost":
@@ -205,10 +221,11 @@ class ConnectionManager:
             msg = "LOGIN|" + login
             self.to_send.put(msg)
 
-        except OSError:
-            print("[Con.M] Cant connect to " + ip)
-            self.client_socket = None
+        except OSError as e:
+            print("[Con.M] Can't connect to " + ip)
+            self.disconnect()
             return -3
+
         finally:
             if release is not None:
                 release.set()
