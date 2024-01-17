@@ -71,6 +71,9 @@ class ConnectionManager:
         self.client_socket = None
         self.last_message = None
 
+        while not self.direct.empty():
+            self.direct.get()
+
     def start_listening(self):
         while True:
             if self.client_socket is not None:
@@ -237,8 +240,7 @@ class ConnectionManager:
             self.PING_CYCLE = int(msg[2][0])
             self.max_message_gap = self.PING_CYCLE * int(msg[2][1]) + 2
             print("setting done with ", msg)
-        else:
-            self.client_socket = None
+
         return msg[1]
 
     def get_lobbies(self):
