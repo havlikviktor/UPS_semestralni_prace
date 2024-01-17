@@ -67,11 +67,12 @@ class ConnectionManager:
         self.lock = threading.Lock()
 
     def disconnect(self):
-        self.client_socket.close()
-        self.client_socket = None
+        if self.client_socket is not None:
+            self.client_socket.close()
+            self.client_socket = None
         self.last_message = None
 
-        while not self.direct.empty():
+        while not self.to_send.empty():
             self.direct.get()
 
     def start_listening(self):
@@ -212,6 +213,8 @@ class ConnectionManager:
                 print(f"cant send message to server")
 
     def connect_server(self, ip, port, login, release=None):
+        self.disconnect()
+
         if ip == "localhost":
             ip = get_local_ip()
         server_address = (ip, port)
