@@ -90,9 +90,8 @@ class ConnectionManager:
 
                             stream = self.client_socket.recv(1024)
 
-                            if len(stream) < 1024:
-                                if self.handle_data_stream(stream):
-                                    self.last_message = datetime.now()
+                            if len(stream) < 1024 and self.handle_data_stream(stream):
+                                self.last_message = datetime.now()
                             else:
                                 print("not accepting data")
                                 self.disconnect()
@@ -119,7 +118,7 @@ class ConnectionManager:
                 action = data.decode('utf-8').split('|')[0]
             except UnicodeDecodeError:
                 print("[Con.M] data are not in utf-8")
-                continue
+                return False
 
             if action == "OK" or action == "ERR":
                 print("[Con.M] putting data into direct", data)
